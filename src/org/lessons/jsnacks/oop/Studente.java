@@ -30,6 +30,6 @@ public class Studente {
 
     @Override //override per sovrascrivere i getter di prima 
     public String toString() { //metodo toString restituiamo una stringa leggibile 
-        return "Studente: " + name + " " + surname + " " + age + " anni";
+        return "Studente: " + name + ", " + surname + ", " + age + " anni";
     }
 }
