@@ -16,7 +16,20 @@ public class Studente {
 		this.age = age;
 	}
 	
-	public String studenteStringified() {
-		return name + " " + surname + ", " + age + " anni";
-	}
+	public String getName() { //getter per LEGGERE i nostri valori
+        return name;
+    }
+	
+	public String getSurname() {
+        return surname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    @Override //override per sovrascrivere i getter di prima 
+    public String toString() { //metodo toString restituiamo una stringa leggibile 
+        return "Studente: " + name + " " + surname + " " + age + " anni";
+    }
 }
